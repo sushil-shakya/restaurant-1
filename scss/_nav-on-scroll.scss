@@ -1,0 +1,25 @@
+.desktop-nav {
+	display: none;
+	.navbar {
+		background: #232323 !important;
+	}
+	.navbar-light {
+		.navbar-brand {
+			text-transform: capitalize;
+			color: #fff;
+			font-family: berkshire swash;
+			font-size: 24px;
+		}
+		.nav-link {
+			text-transform: capitalize;
+			color: #fff;
+			font-family: lora;
+			font-size: 18px;
+			font-weight: 400;
+			font-style: italic;
+			&:hover {
+				color: green;
+			}
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.testimonials {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		border-top: 14px solid transparent;
+		border-image-source: url(../images/border-white.png);
+		border-image-repeat: repeat;
+		border-image-slice: 26;
+	}
+	.testimonials-bg {
+		background: url(../images/testimonials-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-color: rgba(0,0,0,0.5);
+		background-blend-mode: multiply;
+		.section-container {
+			@include eachSectionPadding;
+			.section-title {
+				text-align: center;
+				text-transform: capitalize;
+				h1 {
+					@include sectionTitle;
+					color: #fff !important;
+				}
+				.divider {
+					padding-bottom: 60px;
+					position: relative;
+					.title-divider {
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						z-index: 99;
+						.circle {
+							width: 60px;
+							height: 60px;
+							border-radius: 50px;
+							border: 1px solid #fff;
+							position: relative;
+							i {
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%,-50%);
+								color: #fff;
+							}
+						}
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						width: 45%;
+						border-top: 1px solid #fff;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						width: 45%;
+						border-top: 1px solid #fff;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 0;
+					}
+				}
+			}
+			.says {
+				text-align: center;
+				margin-top: 30px;
+				.quote-item {
+					p {
+						color: #fff;
+						font-family: lora;
+						font-size: 24px;
+						font-weight: 400;
+						font-style: italic;
+					}
+					blockquote {
+						color: #fff;
+						font-family: arial;
+						font-style: 18px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+	.owl-nav {
+		display: none;
+	}
+}

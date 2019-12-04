@@ -1,0 +1,129 @@
+.footer {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		border-top: 14px solid transparent;
+		border-image-source: url(../images/border-white.png);
+		border-image-repeat: repeat;
+		border-image-slice: 26;
+	}
+	.section-container {
+		@include eachSectionPadding;
+		.box {
+			width: 350px;
+			.about {
+				h1 {
+					text-transform: capitalize;
+					color: green;
+					font-family: berkshire swash;
+					font-size: 40px;
+					font-weight: 400;
+					border-bottom: 1px solid green;
+					padding-bottom: 10px;
+				}
+				p {
+					color: #232323;
+					font-family: arial;
+					font-size: 16px;
+					font-weight: 400;
+				}
+				.btn-custom {
+					@include btn;
+					&:hover {
+						@include btnHover;
+					}
+				}
+			}
+			.open-hrs {
+				.title {
+					text-transform: capitalize;
+					color: #232323;
+					font-family: lora;
+					font-size: 24px;
+					font-weight: 700;
+				}
+				.days {
+					color: #232323;
+					font-family: lora;
+					font-size: 18px;
+					font-weight: 400;
+				}
+				.dots {
+					color: green;
+					font-family: lora;
+					font-size: 14px;
+					font-weight: 400;
+				}
+				.time {
+					color: green;
+					font-family: lora;
+					font-size: 18px;
+					font-weight: 400;
+				}
+			}
+			.contact-us {
+				.title {
+					text-transform: capitalize;
+					color: #232323;
+					font-family: lora;
+					font-size: 24px;
+					font-weight: 700;
+				}
+				.icon {
+					color: #232323;
+					font-size: 24px;
+					font-weight: 700;
+				}
+				.desc {
+					color: green;
+					font-family: lora;
+					font-size: 18px;
+					font-weight: 400;
+					a {
+						text-decoration: none;
+						color: green;
+					}
+				}
+			}
+		}
+	}
+	.bottom-footer {
+		background: #232323;
+		padding: 10px 0;
+		.copyright {
+			p {
+				text-transform: capitalize;
+				color: #fff;
+				font-family: arial;
+				font-weight: 400;
+				font-size: 16px;
+				span {
+					color: green;
+				}
+			}
+		}
+		.social-links {
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				text-align: right;
+				li {
+					display: inline-block;
+					padding-left: 10px;
+					a {
+						text-decoration: none;
+						color: #fff;
+						&:hover {
+							color: green;
+						}
+					}
+				}
+			}
+		}
+	}
+}

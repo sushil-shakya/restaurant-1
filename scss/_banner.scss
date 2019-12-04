@@ -1,0 +1,85 @@
+.banner {
+	position: relative;
+	.carousel-inner {
+		.carousel-item {
+			.banner-bg-1 {
+				background: url(../images/banner3.jpg);
+				height: 100vh;
+				@include bannerBackground;
+			}
+			.banner-bg-2 {
+				background: url(../images/banner2.jpg);
+				height: 100vh;
+				@include bannerBackground;
+			}
+			.banner-bg-3 {
+				background: url(../images/banner1.jpg);
+				height: 100vh;
+				@include bannerBackground;
+			}
+			.carousel-caption {
+				height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				img {
+					margin-bottom: 10px;
+				}
+				h1 {
+					text-transform: capitalize;
+					color: #fff;
+					font-family: berkshire swash;
+					font-size: 69px;
+					font-weight: 400;
+					border-top: 2px solid green;
+					border-bottom: 2px solid green;
+					padding: 10px 8px;
+				}
+				p {
+					text-transform: capitalize;
+					color: #fff;
+					font-family: lora;
+					font-size: 18px;
+					font-weight: 400;
+				}
+				.btn-custom {
+					@include btn;
+					&:hover {
+						@include btnHover;
+					}
+				}
+			}
+		}
+	}
+	.banner-nav {
+		background: rgba(0,0,0,0.5);
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		z-index: 1000;
+		nav {
+			ul {
+				list-style: none;
+				display: flex;
+				justify-content: center;
+				margin: 0;
+				li {
+					padding: 20px 10px;
+					a {
+						text-decoration: none;
+						text-transform: capitalize;
+						color: #fff;
+						font-family: lora;
+						font-size: 18px;
+						font-weight: 400;
+						font-style: italic;
+						&:hover {
+							color: green;
+						}
+					}
+				}
+			}
+		}
+	}
+}

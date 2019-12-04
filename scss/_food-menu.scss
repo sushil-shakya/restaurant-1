@@ -1,0 +1,166 @@
+.food-menu-section {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		top: -7px;
+		left: 0;
+		width: 100%;
+		border-top: 14px solid transparent;
+		border-image-source: url(../images/border.png);
+		border-image-repeat: repeat;
+		border-image-slice: 26;
+	}
+	.food-menu-bg {
+		background: url(../images/food-menu-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: #ebe4d5;
+		background-blend-mode: multiply;
+		.section-container {
+			@include eachSectionPadding;
+			.section-title {
+				text-align: center;
+				text-transform: capitalize;
+				h1 {
+					@include sectionTitle;
+				}
+				.divider {
+					padding-bottom: 60px;
+					position: relative;
+					.title-divider {
+						position: absolute;
+						left: 50%;
+						transform: translateX(-50%);
+						z-index: 99;
+						.circle {
+							width: 60px;
+							height: 60px;
+							border-radius: 50px;
+							border: 1px solid green;
+							position: relative;
+							i {
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%,-50%);
+								color: green;
+							}
+						}
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						width: 45%;
+						border-top: 1px solid green;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						width: 45%;
+						border-top: 1px solid green;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 0;
+					}
+				}
+			}
+			.food-tabs {
+				.nav {
+					justify-content: center;
+				}
+				.tab-content {
+					table {
+						tr {
+							.food-heading {
+								text-transform: capitalize;
+								color: #232323;
+								font-family: lora;
+								font-size: 16px;
+								font-weight: 700;
+							}
+							.dots-seperator {
+								color: green;
+							}
+							.food-cost {
+								text-transform: capitalize;
+								color: green;
+								font-family: lora;
+								font-size: 16px;
+								font-weight: 700;
+							}
+							.food-desc {
+								color: #232323;
+								font-family: arial;
+								font-size: 14px;
+								font-weight: 400;
+								font-style: italic;
+							}
+						}
+					}
+				}
+			}
+			.btn-divider {
+				text-align: center;
+				position: relative;
+				margin: 50px 0;
+				.btn-custom {
+					@include btn;
+					&:hover {
+						@include btnHover;
+					}
+					&:before {
+						content: '';
+						position: absolute;
+						width: 43%;
+						border-top: 1px solid green;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+					}
+					&:after {
+						content: '';
+						position: absolute;
+						width: 43%;
+						border-top: 1px solid green;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+	.nav-pills {
+		.nav-link.active {
+			color: #232323;
+			background-color: transparent;
+			font-family: lora;
+			font-size: 24px;
+			font-weight: 400;
+			font-style: italic;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 50px;
+				border-top: 1px solid green;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+		.nav-link {
+			color: green;
+			background-color: transparent;
+			font-family: lora;
+			font-size: 24px;
+			font-weight: 400;
+			font-style: italic;
+			position: relative;
+		}
+	}
+}

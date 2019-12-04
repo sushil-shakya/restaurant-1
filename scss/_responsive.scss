@@ -1,0 +1,382 @@
+// Smart phone screen size
+@include mediaXs {
+	.navbar {
+		background: #232323;
+	}
+	.navbar-light {
+		.navbar-brand {
+			color: #fff;
+			text-transform: capitalize;
+			font-family: berkshire swash;
+			font-size: 20px;
+			&:hover {
+				color: #fff;
+			}
+		}
+		.navbar-toggler-icon {
+			background-image: none;
+			color: #fff;
+		}
+		.navbar-nav {
+			.nav-link {
+				text-transform: capitalize;
+				color: #fff;
+				font-family: lora;
+				font-size: 18px;
+				font-weight: 400;
+				font-style: italic;
+				z-index: 1000;
+				&:hover {
+					color: green;
+				}
+			}
+		}
+	}
+	.carousel-inner {
+		.carousel-item {
+			.carousel-caption {
+				h1 {
+					font-size: 30px !important;
+				}
+			}
+		}
+	}
+	.banner-nav {
+		display: none;
+	}
+	.welcome-section {
+		.section-container {
+			.section-title {
+				h1 {
+					font-size: 37px !important;
+				}
+				.divider:before {
+					width: 37% !important;
+				}
+				.divider:after {
+					width: 37% !important;
+				}
+			}
+			.services {
+				.box {
+					width: 100% !important;
+					.img-frame {
+						width: 100% !important;
+					}
+				}
+			}
+			.btn-divider {
+				.btn-custom:before {
+					width: 30% !important;
+				}
+				.btn-custom:after {
+					width: 30% !important;
+				}
+			}
+		}
+	}
+	.food-menu-section {
+		.food-menu-bg {
+			.section-container {
+				.section-title {
+					h1 {
+						font-size: 37px !important;
+					}
+					.divider:before {
+						width: 37% !important;
+					}
+					.divider:after {
+						width: 37% !important;
+					}
+				}
+				.food-tabs {
+					.nav {
+						justify-content: center !important;
+					}
+					.tab-content {
+						table {
+							width: 100% !important;
+						}
+					}
+				}
+				.btn-divider {
+					.btn-custom:before {
+						width: 30% !important;
+					}
+					.btn-custom:after {
+						width: 30% !important;
+					}
+				}
+			}
+		}
+	}
+	.nav-pills {
+		.nav-link.active {
+			font-size: 16px !important;
+		}
+		.nav-link {
+			font-size: 16px !important;
+		}
+	}
+	.chef-receipe-section {
+		.chef-receipe-bg {
+			.section-container {
+				.section-title {
+					h1 {
+						font-size: 37px !important;
+					}
+				}
+				.divider:before {
+					width: 37% !important;
+				}
+				.divider:after {
+					width: 37% !important;
+				}
+				.receipe-list {
+					width: 100%;
+					.receipe-title {
+						text-align: center;
+					}
+					.receipe-img-frame {
+						width: 100% !important;
+					}
+					.receipe-ingridents {
+						width: 100% !important;
+						h4 {
+							margin-top: 10px;
+							ul {
+								display: block;
+							}
+						}
+					}
+				}
+				.btn-divider {
+					.btn-custom:before {
+						width: 30% !important;
+					}
+					.btn-custom:after {
+						width: 30% !important;
+					}
+				}
+			}
+		}
+	}
+	.event-section {
+		.section-container {
+			.section-title {
+				h1 {
+					font-size: 37px !important;
+				}
+			}
+			.divider:before {
+				width: 37% !important;
+			}
+			.divider:after {
+				width: 37% !important;
+			}
+			.events {
+				.box {
+					width: 100% !important;
+					height: 250px !important;
+					
+				}
+				.events-text {
+					width: 100% !important;
+					
+				}
+			}
+			.btn-divider {
+				.btn-custom:before {
+					width: 30% !important;
+				}
+				.btn-custom:after {
+					width: 30% !important;
+				}
+			}
+		}
+	}
+	.testimonials {
+		.testimonials-bg {
+			.section-container {
+				.section-title {
+					h1 {
+						font-size: 37px !important;
+					}
+					.divider:before {
+						width: 37% !important;
+					}
+					.divider:after {
+						width: 37% !important;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		.section-container {
+			.box {
+				width: 100% !important;
+				.about {
+					text-align: center;
+				}
+			}
+			.open-hrs {
+				margin-top: 20px;
+				table {
+					width: 100% !important;
+				}
+			}
+			.contact-us {
+				margin-top: 20px;
+				table {
+					width: 100% !important;
+				}
+			}
+		}
+		.bottom-footer {
+			.copyright {
+				width: 100% !important;
+				text-align: center;
+				p {
+					font-size: 14px !important;
+				}
+			}
+			.social-links {
+				ul {
+					text-align: center !important;
+				}
+			}
+		}
+	}
+	.desktop-nav {
+		display: none !important;
+	}
+
+	// About Page
+	.about-banner {
+		.about-bg {
+			background-position: center center !important;
+			.section-container {
+				.section-title {
+					h1 {
+						font-size: 80px !important;
+					}
+				}
+				.divider:before {
+					width: 37% !important;
+				}
+				.divider:after {
+					width: 37% !important;
+				}
+			}	
+		}
+	}
+	.history-section {
+		.section-container {
+			.history-text-box {
+				width: 100% !important;
+				h1 {
+					font-size: 37px !important;
+					text-align: center;
+				}
+				p {
+					text-align: justify;
+				}
+			}
+			.history-image-box {
+				width: 100% !important;
+			}
+		}
+	}
+	.interior-section {
+		.section-container {
+			.interior-text-box {
+				width: 100% !important;
+				h1 {
+					font-size: 37px !important;
+					text-align: center;
+				}
+				p {
+					text-align: justify;
+				}
+				.btn-custom {
+					margin-bottom: 30px;
+				}
+			}
+			.interior-image-box {
+				width: 100% !important;
+			}
+		}
+	}
+	.service-section {
+		.section-container {
+			.service-text-box {
+				width: 100% !important;
+				h1 {
+					font-size: 37px !important;
+					text-align: center;
+				}
+				p {
+					text-align: justify;
+				}
+			}
+			.service-image-box {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+@include mediaSm {
+	.navbar {
+		background: #232323;
+	}
+	.navbar-light {
+		.navbar-brand {
+			color: #fff;
+			text-transform: capitalize;
+			font-family: berkshire swash;
+			font-size: 20px;
+		}
+		.navbar-toggler-icon {
+			background-image: none;
+			color: #fff;
+		}
+		.navbar-nav {
+			.nav-link {
+				text-transform: capitalize;
+				color: #fff;
+				font-family: lora;
+				font-size: 18px;
+				font-weight: 400;
+				font-style: italic;
+				z-index: 1000;
+				&:hover {
+					color: green;
+				}
+			}
+		}
+	}
+	.carousel-inner {
+		.carousel-item {
+			.carousel-caption {
+				h1 {
+					font-size: 34px;
+				}
+			}
+		}
+	}
+	.banner-nav {
+		display: none;
+	}
+	.desktop-nav {
+		display: none;
+	}
+}
+
+// Laptops/Desktop Screen
+@include mediaLg {
+	.mobile-nav {
+		display: none;
+	}
+}
